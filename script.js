@@ -43,16 +43,16 @@ function vericarPalpites(sorteados){
 		if (document.getElementsByTagName('input')[i].value == sorteados[0]) {
 			document.getElementsByTagName('input')[i].style = "background-color: green"
 		}
-		if (document.getElementsByTagName('input')[i+1].value == sorteados[0]) {
+		if (document.getElementsByTagName('input')[i+1].value == sorteados[1]) {
 			document.getElementsByTagName('input')[i+1].style = "background-color: green"
 		}
-		if (document.getElementsByTagName('input')[i+2].value == sorteados[0]) {
+		if (document.getElementsByTagName('input')[i+2].value == sorteados[2]) {
 			document.getElementsByTagName('input')[i+2].style = "background-color: green"
 		}
-		if (document.getElementsByTagName('input')[i+3].value == sorteados[0]) {
+		if (document.getElementsByTagName('input')[i+3].value == sorteados[3]) {
 			document.getElementsByTagName('input')[i+3].style = "background-color: green"
 		}
-		if (document.getElementsByTagName('input')[i+4].value == sorteados[0]) {
+		if (document.getElementsByTagName('input')[i+4].value == sorteados[4]) {
 			document.getElementsByTagName('input')[i+4].style = "background-color: green"
 		}
 	}
