@@ -19,15 +19,30 @@ function aleatorizar(limite){
 	vericarPalpites(sorteados)
 }
 function novoJogador(){
-	document.getElementById('palpite').appendChild(document.createElement('span'))
+	
+	var span = document.createElement('span')
+	span.id = 'palpite'+document.getElementsByTagName('span').length
+	
+	document.getElementById('palpites').appendChild(span)
 	document.getElementById('palpites').appendChild(document.createElement('br'))
 	document.getElementById('palpites').appendChild(document.createElement('br'))
+	
 	for (var i = 0; i< 5; i++){
+
+		const area = document.createElement('div')
+		area.className = "nes-field is-inline"
+		area.style = "width: 12%; display: inline-block;  margin-right: 16px"
+
+		ultimaDiv = document.getElementsByTagName('div').length
+		area.id = "div"+ultimaDiv
+		document.getElementById(span.id).appendChild(area)
+
 		const entradas = document.createElement('input')
+		entradas.className = "nes-input"
 		entradas.type = "number"
 		entradas.min = "1"
 		entradas.max = "50"
-		document.getElementById('palpites').appendChild(entradas)
+		document.getElementById('div'+ultimaDiv).appendChild(entradas)
 	}
 	
 
