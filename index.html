@@ -2,11 +2,52 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<title>Bingo</title>
+	<!-- nes css -->
+	<link href="https://unpkg.com/nes.css@2.2.0/css/nes.min.css" rel="stylesheet" />
+
+	<!-- fonte pixelada (sem caracteres acentuados)-->
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+	<title>Sorteio ++</title>
+
+	 <style>
+      html, body, pre, code, kbd, samp {
+          font-family: 'Press Start 2P';
+      }
+    </style>
+
 </head>
 <body>
-	<div>
+
+
+	<center>
+		<h2>Sorteio ++</h2>
+	<br>
+	<a href="#" class="nes-badge is-icon">
+  		<span class="is-dark">1º</span>
+  		<span class="is-warning" id="valor1">XX</span>
+	</a>
+	<a href="#" class="nes-badge is-icon">
+  		<span class="is-dark">2º</span>
+  		<span class="is-warning" id="valor2">XX</span>
+	</a>
+	<a href="#" class="nes-badge is-icon">
+  		<span class="is-dark">3º</span>
+  		<span class="is-warning" id="valor3">XX</span>
+	</a>
+	<a href="#" class="nes-badge is-icon">
+  		<span class="is-dark">4º</span>
+  		<span class="is-warning" id="valor4">XX</span>
+	</a>
+	<a href="#" class="nes-badge is-icon">
+  		<span class="is-dark">5º</span>
+  		<span class="is-warning" id="valor5">XX</span>
+	</a>
+
+
+
+
+	<!-- <div>
 		<ul type="none">
 			<li id="valor1"> XX</li>
 			<li id="valor2"> XX</li>
@@ -14,22 +55,38 @@
 			<li id="valor4"> XX</li>
 			<li id="valor5"> XX</li>
 		</ul>
-	</div>
-	<button onclick="aleatorizar(50)">Sortear</button>
+	</div> -->
+	<br>
+	<br>
+	<button onclick="aleatorizar(50)"  class="nes-btn is-success">Sortear</button>
 
 	
-	<button onclick="novoJogador()">Novo palpites</button>
-
+	<button onclick="novoJogador()"  class="nes-btn is-primary">Novo palpites</button>
+	<br>
+	<br>
 	<div id="palpites">
-		<p>Palpite</p>
+		<p>Seu palpite</p>
 		<span id="palpite">
-			<input type="number" min="1" max="50">
-			<input type="number" min="1" max="50">
-			<input type="number" min="1" max="50">
-			<input type="number" min="1" max="50">
-			<input type="number" min="1" max="50">
+			<div class="nes-field is-inline" style="width: 12%; display: inline-block;">
+  				<input type="number" class="nes-input teste" min="1" max="50">
+  			</div>
+  			<div class="nes-field is-inline" style="width: 12%; display: inline-block;">
+  				<input type="number" class="nes-input" min="1" max="50">
+  			</div>
+  			<div class="nes-field is-inline" style="width: 12%; display: inline-block;">
+  				<input type="number" class="nes-input" min="1" max="50">
+  			</div>
+  			<div class="nes-field is-inline" style="width: 12%; display: inline-block;">
+  				<input type="number" class="nes-input" min="1" max="50">
+  			</div>
+  			<div class="nes-field is-inline" style="width: 12%; display: inline-block;">
+  				<input type="number" class="nes-input" min="1" max="50">
+  			</div>
+  			<br>
+  			<br>
 		</span>
 	</div>
+	</center>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
